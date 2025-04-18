@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE games [
+    <!ELEMENT games (category+)>
+    <!ELEMENT category (name, game+)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT game (name, description, subject, grade, searchTags*, cost?, equipment+, additionalCost?, reviews*, images+, url, releaseyear, developer, genre+, author, source)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT subject (#PCDATA)>
+    <!ELEMENT grade (#PCDATA)>
+    <!ELEMENT searchTags (#PCDATA)*>
+    <!ELEMENT cost (#PCDATA)>
+    <!ELEMENT equipment (#PCDATA)>
+    <!ELEMENT additionalCost (#PCDATA)>
+    <!ELEMENT reviews (review*)>
+    <!ELEMENT review (#PCDATA)>
+    <!ATTLIST review score CDATA #REQUIRED>
+    <!ELEMENT images (image+)>
+    <!ELEMENT image (#PCDATA)>
+    <!ELEMENT url (#PCDATA)>
+	<!ELEMENT releaseyear (#PCDATA)>
+    <!ATTLIST releaseyear score CDATA #REQUIRED>
+    <!ELEMENT developer (#PCDATA)>
+    <!ELEMENT genre (#PCDATA)>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT source (#PCDATA)>
+    
+    <!ENTITY authorName "Jane Doe">
+    <!ENTITY university "University of Newcastle">
+	
+]>
+    <games>
+
+
+    <category>
+        <name>Board Games</name>
+        <game>
+            <name>Jenga</name>
+            <description>A British board game consisting of blocks that players stack.</description>
+            <subject>Co-ordination Development</subject>
+            <grade>grade 3</grade>
+            <searchTags>co-ordination, balance</searchTags>
+            <cost>$29.99</cost>
+            <equipment>Jenga blocks</equipment>
+            <additionalCost>No</additionalCost>
+            <reviews>
+                <review score="5">Greta for family time bonding</review>
+                <review score="5">Fun and entertaining for all ages!</review>
+            </reviews>
+            <images>
+                <image>images/Jenga.jpg</image>
+            </images>
+            <url>https://www.jenga.com</url>
+            <releaseyear score="release-year">1983</releaseyear>
+            <developer>Hasbro</developer>
+            <genre>Strategy</genre>
+            <author>&authorName;</author>
+            <source>&university;</source>
+    </game>
+
+
+    <game>
+            <name>Monopoly</name>
+            <description>A classic board game where players roll dice to move around the game board, buying and trading properties, and aiming to bankrupt their opponents</description>
+            <subject>Life-Skills</subject>
+            <grade>University</grade>
+            <searchTags>finance, negotiation, banking</searchTags>
+            <cost>$34</cost>
+            <equipment>Monopoly game board, two sets of cards, fake money, dices, miniature house and hotel models</equipment>
+            <additionalCost>No</additionalCost>
+            <reviews>
+                <review score="4">Great way to fight with family and friend on the weekends.</review>
+                <review score="4">Simulates real life events such as debt !!</review>
+            </reviews>
+            <images>
+                <image>images/Monopoly.jpg</image>
+            </images>
+            <url>https://www.hasbro.com/en-us/brands/monopoly</url>
+			<releaseyear score="release-year">1935</releaseyear>
+            <developer>Hasbro</developer>
+            <genre>Capitalism</genre>
+            <author>&authorName;</author>
+            <source>&university;</source>
+    </game>
+           
+
+
+    <game>
+            <name>Ludo</name>
+            <description> a strategy board game for two to four[a] players, in which the players race their four tokens from start to finish according to the rolls of a single die.</description>
+            <subject>Entertainment</subject>
+            <grade>Grade 1</grade>
+            <searchTags>dice, fun, board game</searchTags>
+            <cost>0</cost>
+            <equipment>Ludo game board, dice, tokens </equipment>
+            <additionalCost>No</additionalCost>
+            <reviews>
+                <review score="5">Good game to kill time when there is no internet</review>
+                <review score="5">Fun way to spend your weekend doing rather than day time drinking</review>
+            </reviews>
+            <images>
+                <image>images/Ludo.jpg</image>
+            </images>
+            <url>https://ludoking.com/</url>
+			<releaseyear score="release-year">1896</releaseyear>
+            <developer>Gametion Technologies</developer>
+            <genre>Strategy</genre>
+            <author>&authorName;</author>
+            <source>&university;</source>
+    </game>
+
+
+    </category>
+
+
+</games>

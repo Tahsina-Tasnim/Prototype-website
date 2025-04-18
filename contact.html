@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us - Learning Ladder</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <nav>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms and Conditions</a></li>
+			<li class="game-categories">
+             <!-- Added "game-categories" class -->
+                <a href="#">Game</a>
+                <div class="dropdown-content"> 
+
+                <!-- Dropdown menu content!!!! Ngl had help from the internet w3school khanacademy and youtube came in a clutch, i was desperate for the 5 marks :) -->
+                
+                    <a href="template.xml">2000s Video Games</a>
+                    <a href="template2.xml">Board Games</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+        <p style="font-size:20px; color:darkgray; text-align:center"> This is our Contact Page!<br>
+        For any complaints or adjustments, do not hesitate to contact us. Your opinions and insights are much appreciated!</p>
+        <h2>Contact Information</h2>
+        <p>If need to contact us for more information or any other assistance, feel free to contact us by an email or by filling up the form below:</p>
+
+        <address>
+            <strong>Learning Ladder</strong><br>
+            8/1 Allama Iqbal Road<br>
+            Narayanganj, Bangladesh<br>
+            Email: LearningLadder@gmail.com<br>
+            Phone: +61(04)12345678
+        </address>
+
+        <h2>Contact Form</h2>
+        <form class="contact-form" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="2" required></textarea>
+
+            <p>Is this message urgent?</p>
+            <input type="radio" id="urgent-yes" name="urgent" value="yes" required>
+            <label for="urgent-yes">Yes</label>
+            <input type="radio" id="urgent-no" name="urgent" value="no" required>
+            <label for="urgent-no">No</label>
+
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </div>
+        </form>
+    
+
+    <footer>
+        <p> 2023 Tahsina Tasnim (c3440184) | Email: tahsinatasnim03@gmail.com.com</p>
+    </footer>
+</body>
+</html>

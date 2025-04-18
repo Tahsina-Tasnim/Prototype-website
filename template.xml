@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE games [
+    <!ELEMENT games (category+)>
+    <!ELEMENT category (game+)>
+    <!ATTLIST category name CDATA #REQUIRED>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT game (name, description, subject, grade, searchTags*, cost?, equipment+, additionalCost?, reviews*, images+, url, releaseyear, developer, genre+, author, source)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT subject (#PCDATA)>
+    <!ELEMENT grade (#PCDATA)>
+    <!ELEMENT searchTags (#PCDATA)*>
+    <!ELEMENT cost (#PCDATA)>
+    <!ELEMENT equipment (#PCDATA)>
+    <!ELEMENT additionalCost (#PCDATA)>
+    <!ELEMENT reviews (review*)>
+    <!ELEMENT review (#PCDATA)>
+    <!ATTLIST review score CDATA #REQUIRED>
+    <!ELEMENT images (image+)>
+    <!ELEMENT image (#PCDATA)>
+    <!ELEMENT url (#PCDATA)>
+    <!ELEMENT releaseyear (#PCDATA)>
+	<!ATTLIST releaseyear score CDATA #REQUIRED>
+    <!ELEMENT developer (#PCDATA)>
+    <!ELEMENT genre (#PCDATA)>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT source (#PCDATA)>
+	
+	<!ENTITY authorName "Jane Doe">
+    <!ENTITY university "University of Newcastle">
+    
+]>
+
+
+    <games>
+
+
+    <category name="2000sVideoGames">
+        <game>
+            <name>Super Mario Galaxy</name>
+            <description>A platform game that is played on the Wii</description>
+            <subject>Entertainment</subject>
+            <grade>Grade 5</grade>
+            <searchTags>adventure, Mario, Nintendo</searchTags>
+            <cost>$5.99</cost>
+            <equipment>Wii console, Wii remote</equipment>
+            <additionalCost>No</additionalCost>
+            <reviews>
+                <review score="4">Fun game for adults and kids!</review>
+                <review score="5">Great soundtrack and ammazing graphics.</review>
+            </reviews>
+            <images>
+                <image>images/image1.jpg</image>
+            </images>
+            <url>https://www.nintendo.com/games/super-mario-galaxy</url>
+            <releaseyear score="release-year">2007</releaseyear>
+            <developer>Nintendo</developer>
+            <genre>Action-Adventure</genre>
+            <author>&authorName;</author>
+            <source>&university;</source>
+    </game>
+
+
+    <game>
+            <name>The Sims</name>
+            <description>A life simulation game where players can control virtual people</description>
+            <subject>Entertainment</subject>
+            <grade>Grade 5</grade>
+            <searchTags>simulation, lifestyle</searchTags>
+            <cost>$9.50</cost>
+            <equipment>Computer</equipment>
+            <additionalCost>Downloadable extension packs available for purchase</additionalCost>
+            <reviews>
+                <review score="4">Very creative and addicting!</review>
+                <review score="4">Lets you build your own world!</review>
+            </reviews>
+            <images>
+                <image>images/image2.jpg</image>
+            </images>
+            <url>https://www.ea.com/games/the-sims</url>
+            <releaseyear score="release-year">2000</releaseyear> 
+            <developer>Maxis</developer>
+            <genre>Simulation</genre>
+            <author>&authorName;</author>
+            <source>&university;</source>
+           
+    </game>
+
+
+    <game>
+            <name>Grand Theft Auto: Vice City</name>
+            <description>An action-adventure game</description>
+            <subject>Entertainment</subject>
+            <grade>Grade 10</grade>
+            <searchTags>action, adventure, open-world</searchTags>
+            <cost>$44.97</cost>
+            <equipment>Computer, controller</equipment>
+            <additionalCost>No</additionalCost>
+            <reviews>
+                <review score="5">An open-world game with lots to explore</review>
+                <review score="4">Really addicting but very violent as well, not suitable for kids</review>
+            </reviews>
+            <images>
+                <image>images/image3.jpg</image>
+            </images>
+            <url>https://www.rockstargames.com/vicecity/</url>
+            <releaseyear score="release-year">2002</releaseyear>
+            <developer>Rockstar Games</developer>
+            <genre>Action-Adventure</genre>
+            <author>&authorName;</author>
+            <source>&university;</source>
+    </game>
+
+
+    </category>
+
+
+</games>
